@@ -49,7 +49,7 @@
         -webkit-font-smoothing: antialiased;
       }
       
-      /* Force GPU Acceleration for moving elements */
+      /* Force GPU Acceleration */
       .gpu-accelerated {
         transform: translateZ(0);
         will-change: transform;
@@ -70,32 +70,28 @@
         background: #4338ca;
       }
       
-      /* Updated Glassmorphism per requirements */
       .glass-card {
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 10px 40px -10px rgba(31, 38, 135, 0.08);
       }
     </style>
   <script type="importmap">
 {
   "imports": {
-    "recharts": "https://esm.sh/recharts@^3.6.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
     "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
-    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2",
-    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
-    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
-    "three": "https://esm.sh/three@^0.182.0"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
